@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto gifOS</title>
+    <link rel="stylesheet" type="text/css" href="styles/darkStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/homeStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300i,400,400i,500,700&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <header>
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.854</p><p id="visit"></p>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><img class="logo" src="assets/gifOF_logo.png" alt="logo-Gifos"></a>
+            <div class="buttons">
+                <div class="buttonNav1" type="button">
+                    <a class="a" href="captura.html">Crear Guifos</a>
+                </div>
+                <button type="button" class="buttonNav2">Elegir tema</button>
+                <div class="dropdown">
+                    <img src="assets/dropdown.svg" alt="dropdown">
+                    <div class="indrop">
+                        <button class="themebtn" id="day">Sailor Day</button>
+                        <button class="themebtn" id="night">Sailor Night</button>
+                    </div>
+                </div>
+                <div class="mygi">
+                    <p><u>M</u>is Guifos</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="searcher">
+        <div class="searcher_top">
+            <p>Buscar</p>
+        </div>
+        <form class="fillsearch" id="searchform">
+            <input type="text" id="searchinput" placeholder="Buscar gifs, hashtags, temas, busca lo que quieras…">
+            <button class="buttonsearch" id="searchbutton" type="submit"><img id="lupa" src="assets/lupa_light.svg" alt="lupa">Buscar</button>
+        </form>
+        <div class="states--container">
+            <div class="states" id="state1"></div>
+            <div class="states" id="state2">Grumpy</div>
+            <div class="states" id="state3">Psicodelic</div>
+        </div>
+    </section>
+    <div class="hashtags"></div>
+    <div id="search_result"></div>
+    <section class="suggest" id="suggest">
+        <div class="section_titles" id="suggest">
+            <p>Hoy te sugerimos:</p>
+        </div>
+        <div id="suggest--result"></div>
+        <div id ="suggest--vermas"></div>
+    </section>
+    <section class="trending">
+        <div class="section_titles">
+            <p>Tendencias:</p>
+        </div>
+        <div id="trendresult" class="result"></div>
+    </section>
+    <section class="own--gifos">
+        <div>Mis Gifos</div>
+        <div class="my--gifos"></div>
+    </section>
+   <script src="scripts/home-script.js"></script>
+</body>
+</html>

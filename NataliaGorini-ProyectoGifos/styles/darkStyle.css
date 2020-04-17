@@ -1,0 +1,25 @@
+:root, [theme = "dark"] {
+    --color-body: #110038;
+    --color-welcome: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --color-top: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --color-btn-back: #EE3EFE;
+    --color-btn-boxshadow:  inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    --color-btn-border: 1px solid #110038;
+    --color-windows-back: #B4B4B4;
+    --color-windows-boxshadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    --color-drop-btnback: #EE3EFE;
+    --color-drop-border: 1px solid #110038;
+    --color-drop-btnactive: #2E32FB;
+    --color-drop-btnactivebor: 1px solid rgba(51,53,143,0.20);
+    --color-drop-btnboxshadow:  inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    --color-vermas-back: #2E32FB;
+    --color-vermas-border: 1px solid #4C2F99;
+    --color-vermas-boxshadow:inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+    --color-font-primary: #FFFFFF;
+    --color-font-secondary: #110038;
+    --color-btn-secondary: #110038;
+    --cancel-btn-back:rgb(238, 140, 247);
+    --color-font-btnpre:#FFFFFF; 
+    --color-back-btnpre:#110038;
+    --color-btn-hover: 1px dotted #FFFFFF;
+}

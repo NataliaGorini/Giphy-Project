@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto gifOS captura</title>
+    <link rel="stylesheet" type="text/css" href="styles/darkStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/uploadStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300i,400,400i,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.854</p>
+        </div>
+        <nav class="navbar">
+            <div class="back"><a href="index.html"><img src="assets/arrow.svg" alt="arrow"></a></div>
+            <img class="logo" src="assets/gifOF_logo.png" alt="logo">
+        </nav>
+    </header>
+    <section class="steps--gifos" id="only">
+        <div class="top--window">
+            <p>Crear Guifos</p>
+        </div>
+        <div class="window">
+            <img src="assets/window_img.png" alt="window">
+            <p>Aquí podrás crear tus propios guifos</p>
+        </div>
+        <div class="steps--list">
+            <p>Crear tu <b><i>guifo</i></b> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+            <ol>
+                <li>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</li>
+                <li>Capturar tu momento guifo</li>
+                <li>Revisar el momento</li>
+                <li>Listo para subir y compartir!</li>
+            </ol>
+            <p>Quieres comenzar a crear tu <b><i>guifo</i></b> ahora?</p>
+        </div>
+        <div class="buttons">
+            <div class="button" id="cancel" type="reset"><a href="index.html">Cancelar</a></div>
+            <button class="button" id="start" type="submit">Comenzar</button>
+        </div>
+    </section>  
+    <section class="step1--precapture">
+        <div class= "capture--container">
+            <div class="top--window">
+                <p>Un Chequeo Antes de Empezar</p>
+                <img src="assets/button3.svg" alt="cruz boton">
+            </div>
+            <video id="video" autoplay></video>
+            <div class="btns--container">
+                <div class="btns--contStart">
+                    <div class="img--logo"><img src="assets/camera.svg" alt="camara"></div>
+                    <button id="btn--start">Capturar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step2--capture">
+        <div class= "capture--container">
+            <div class="top--window">
+                <p>Capturando Tu Guifo</p>
+            </div>
+            <video id="videoCapture" autoplay></video>
+            <div class="btns--container">
+                <div class="timer">00:00:00</div>
+                <div class="btn--capture">
+                    <div class="img--logo2"><img src="assets/recording.svg" alt="recording"></div>
+                    <button id="btn--stop">Listo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step3--preview">
+        <div class= "capture--container">
+            <div class="top--window">
+                <p>Vista Previa</p>
+            </div>
+            <img id="videoSave" src="" alt="videosave">
+            <div class="btns--container">
+                <div class="timer2"></div>
+                <div class="play--img"><img src="assets/forward.svg" alt="playbtn"></div> 
+                <div class="progress--less">
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                    <span class="cells--progress"></span>
+                </div>
+                <div class="btn--preview">
+                    <button id="btn--repeat">Repetir Captura</button>
+                    <button id="btn--upload">Subir Guifo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step4--upload">
+        <div class= "capture--container">
+            <div class="top--window">
+                <p>Subiendo Guifo</p>
+            </div>
+            <div class="container--upload">
+                <img src="assets/globe_img.png">
+                <p class="progress--wait">Estamos subiendo tu guifo…</p>
+                <p class="p--tiempo">Tiempo restante: <del>38 años</del> algunos minutos</p>
+            </div>
+            <div class="btns--container">
+                <button id="btn--cancel">Cancelar</button>
+            </div>
+        </div>
+    </section>
+    <section class="step5--success">
+            <div class="top--window">
+                <p>Guifo Subido Con Éxito</p>
+            </div>
+        <div class= "success--container">
+            <img id="uploadedGif" alt="MyGifUploaded">
+            <div class="btns--contEnd">
+                <p>Guifo creado con éxito</p>
+                <button class="btns--finish" id="copyUrlBtn">Copiar Enlace Guifo</button>
+                <button class="btns--finish" id="downloadGifBtn">Descargar Guifo</button>
+            </div>
+        </div>
+        <div class="btns--container">
+            <button id="finishAllBtn">Listo</button>
+        </div>
+    </section>
+    <section class="own--gifos">
+        <div>Mis Gifos</div>
+        <div class="my--gifos"></div>
+    </section>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="scripts/upload-script.js"></script>
+
+</body>
+</html>
